@@ -1,1 +1,1 @@
-# alx_python
+# This is my first python project. I have had experience of PHP, Javascript and HTML/CSS programming. They are all interesting languages but i feel python will be much greater in experience for me. 
