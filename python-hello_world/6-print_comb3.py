@@ -1,18 +1,6 @@
-
-""""
-def try_combinations():
-    for i in range(10):
-        for j in range(10):
-            if i != j:
-                print(f"{i}{j}")
-
-try_combinations()
-"""
-
-def print_now():
-    for i in range(5):
-        for j in range(10):
-            if i != j:
-                print(f"{i}{j},")
-                
-print_now()
+for a in range(9):
+    for b in range(a+1, 10):
+        if a == 8:
+            print("{}{}".format(a, b))
+        else:
+         print("{}{}".format(a, b), end=", ")

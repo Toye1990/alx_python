@@ -1,3 +1,6 @@
-for i in range(0,99):
-    #for j in range(0,99):
-      print("{:02},".format(i))
+for i in range(100):
+      if i == 99:
+           print(i) 
+      else:
+        print("{}{}".format(
+            "0" if i < 10 else "", i), end=", ")
