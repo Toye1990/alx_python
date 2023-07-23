@@ -1,2 +1,1 @@
-words = "Programming is like building a multilingual puzzle"
-print("{}".format(words))
+print("Programming is like building a multilingual puzzle")
