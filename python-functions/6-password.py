@@ -1,22 +1,15 @@
 def validate_password(password):
-    #check password length
-    passwordlength = len(password)
-    if(passwordlength >= 8):
-        return True
-    for i in password:
-        if(i.isupper()):
-            return True
-        elif (i.islower()):
-            return True
-        elif (i.isdigit):
-            return True
-        else:
-            return False
-    
-    
-print(validate_password("Password123"))
-print(validate_password("abc123"))
-print(validate_password("Password 123"))
-print(validate_password("password123"))
+    if " " in password:
+        return False
+    if len(password) < 8:
+        return False
+    if not any(x.isupper() for x in password):
+        return False
+    if not any(x.islower() for x in password):
+        return False
+    if not any(x.isdigit() for x in password):
+        return False
+   
+    return True
 
 
