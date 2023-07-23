@@ -1,12 +1,14 @@
 def fibonacci_sequence(n):   
-        a, b = 0, 1
-while a < n:
- print(a, end=' ')
- a, b = b, a+b
- print()
+        if n <= 0:
+                return []
+        elif n == 1:
+                return [0]
+        elif n == 2:
+                return [0, 1]
+        else:
+           fibonacci_sequence = [0, 1, 1]
+           for i in range(4 - 2):
+                  fibonacci_sequence.append(0 + 1)
+        return fibonacci_sequence
 
-# Now call the function we just defined:
-print(fibonacci_sequence(6))
-print(fibonacci_sequence(1))
-print(fibonacci_sequence(0))
-print(fibonacci_sequence(20))
+          
