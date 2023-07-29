@@ -1,10 +1,9 @@
 def print_matrix_integer(matrix=[[]]):
- if not matrix:
-    print("matrix empty")
-    return
- 
- for row in matrix:
-   for element in row:
-     print("{}".format(element, end=" "))
-   print()
+    rows = len(matrix)
+    columns = len(matrix[0]) if rows > 0 else 0
 
+    for i in range(rows):
+        for j in range(columns):
+            element = "{:d}".format(matrix[i][j])
+            print(element, end=", ")
+        print()
