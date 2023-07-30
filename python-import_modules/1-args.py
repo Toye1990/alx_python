@@ -1,13 +1,13 @@
-def print_arguments(args):
-  """Prints the number and list of arguments."""
-  number_of_arguments = len(args)
-  if number_of_arguments == 0:
-    print("No arguments.")
-  else:
-    print(f"Number of arguments: {number_of_arguments} argument(s):")
-    for i, arg in enumerate(args):
-      print(f"{i + 1}: {arg}")
-
+#!/usr/bin/python3
+from sys import argv
 if __name__ == "__main__":
-  args = ["tack", "ball", "mask"]
-  print_arguments(args)
+ def print_args(arg):
+  """Prints the number of and the list of its arguments."""
+  args = arg.argv
+  num_args = len(args)
+
+  print("Number of arguments:", num_args)
+  print("List of arguments:")
+  for arg in args:
+    print("  ", arg)
+  print_args()
