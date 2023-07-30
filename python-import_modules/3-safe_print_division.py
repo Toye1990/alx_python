@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
- def safe_print_division(a, b):
+def safe_print_division(a, b):
   try:
     result = a / b
+    print("Inside result: {}".format(result))
   except ZeroDivisionError:
-   return None
+     return None
   finally:
-    result = safe_print_division(a, b)
-    print("{:d} / {:d} = {}".format(a, b, result))   
     return result
+  
 
-
-
+  
