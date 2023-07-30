@@ -6,7 +6,7 @@ if __name__ == "__main__":
        if i == len(row) - 1:
          print("{}".format(row[i]))
        else: 
-         print(row[i], end=", ")
+         print("{}".format(row[i]), end=", ")
 
 
         
