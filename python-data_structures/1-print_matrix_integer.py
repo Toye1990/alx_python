@@ -4,8 +4,8 @@ if __name__ == "__main__":
    for row in matrix:
      for i in range(len(row)):
        if i == len(row) - 1:
-         print(row[i])
+         print("{}".format(row[i]))
        else: 
-         print("{}, {}".format(row[i], end=", "))
+         print(row[i], end=", ")
        
 
