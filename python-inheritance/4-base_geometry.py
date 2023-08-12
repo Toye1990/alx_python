@@ -1,3 +1,13 @@
+
+"""
+module will be used later
+"""
 class BaseGeometry:
-    def area(self):
-        raise Exception("area() is not implemented")
+ """
+ BaseGeometry class to be used to raised an exception
+ """
+ def area(self):
+    """
+   area() function will be used to raise an exception
+   """
+    raise Exception("area() is not implemented")
