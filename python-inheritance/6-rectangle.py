@@ -19,9 +19,17 @@ class Rectangle(BaseGeometry):
     class BaseGeometry reused
     """
     def __init__(self, width, height):
+        self._width = 0
+        self._height = 0
         self.integer_validator("width", width)
         self.integer_validator("height", height)
-        self.width = width
-        self.height = height
+        self._width = width
+        self._height = height
     def area(self):
         return self._width * self._height
+    
+    def __str__(self):
+        return "[rectangle] {} - {}".format(self._width, self._height)
+    
+    def __str__(self):
+        return "[rectangle] {}/{}".format(self._width, self._height)
