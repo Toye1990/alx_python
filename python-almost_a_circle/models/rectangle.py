@@ -16,10 +16,7 @@ class base to used to manage id in this project and future project
    self.id = Base.__nb_objects + 1
    Base.__nb_objects += 1
     
-
 class Rectangle(Base):
- 
- 
  """
  class rectangle to used to manage id in this project and future project
  """ 
