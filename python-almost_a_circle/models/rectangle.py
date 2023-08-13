@@ -81,6 +81,10 @@ class Rectangle(Base):
     def area(self):
       """area will be used to calculate the width and height of the rectangle clas."""
       return self.__width * self.__height
+    
+    def __str__(self):
+        """Initialize string instance."""
+        return "[rectangle] {} / {}".format(self.__x, self.__y)
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a new rectangle."""
@@ -114,6 +118,8 @@ class Rectangle(Base):
            for j in range(self.width):
                print("#", end="")
            print()
+
+  
         
   
         
