@@ -109,6 +109,7 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         
     def display(self):
+       """using display function to print out #."""
        for i in range(self.height):
            for j in range(self.width):
                print("#", end="")
