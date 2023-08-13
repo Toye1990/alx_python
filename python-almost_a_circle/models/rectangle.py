@@ -18,10 +18,7 @@ class base to used to manage id in this project and future project
     
 
 class Rectangle(Base):
- __width = None
- __heigh = None
- __x = None
- __y = None
+ 
  
  """
  class rectangle to used to manage id in this project and future project
