@@ -69,3 +69,10 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
+        if not isinstance(id, int):
+            raise TypeError("width must be an integer")
+        if width and height >= 0:
+            raise ValueError("width and height must be equal to zero")
+        if x or y > 0:
+            raise ValueError("x or y must be >=0")
