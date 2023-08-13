@@ -1,4 +1,4 @@
-
+from 6-rectangle import BaseGeometry
 """
 module will be used later
 """   
