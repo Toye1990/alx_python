@@ -116,8 +116,11 @@ class Rectangle(Base):
        """using display function to print out #."""
        for i in range(self.height):
            for j in range(self.width):
-               print("#", end="")
-           print()
+               if j >= self.x and j < self.x + self.width:
+                   if j >= self.y and j < self.y + self.height:
+                      print("#", end="")
+                   else:
+                       print
 
   
         
