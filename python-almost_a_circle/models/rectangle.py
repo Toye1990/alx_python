@@ -30,10 +30,6 @@ class Rectangle(Base):
     @width.setter
     def width(self, width):
         """Set the width of the rectangle."""
-        if not isinstance(width, int):
-            raise TypeError("width must be an integer")
-        if width < 0:
-            raise ValueError("width must be > 0")
         self.__width = width
 
     @property
@@ -44,10 +40,6 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """Set the height of the rectangle."""
-        if not isinstance(height, int):
-            raise TypeError("width must be an integer")
-        if height < 0:
-            raise ValueError("width must be > 0")
         self.__height = height
 
     @property
@@ -58,8 +50,6 @@ class Rectangle(Base):
     @x.setter
     def x(self, x):
         """Set the x-coordinate of the rectangle."""
-        if x < 0:
-            raise ValueError("x must be >= 0")
         self.__x = x
 
     @property
@@ -70,8 +60,6 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """Set the y-coordinate of the rectangle."""
-        if y < 0:
-            raise ValueError("width must be >= 0")
         self.__y = y
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -82,6 +70,30 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-        if not isinstance(id, int):
-            raise TypeError("width must be an integer")
-        
+    def validate_width(self, width):
+     """Validate the width of the rectangle."""
+     if not isinstance(width, int):
+          raise TypeError("width must be an integer")
+     if width <= 0:
+          raise ValueError("width must be > 0")
+
+    def validate_height(self, height):
+        """Validate the height of the rectangle."""
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height <= 0:
+            raise ValueError("height must be > 0")
+
+    def validate_x(self, x):
+        """Validate the x-coordinate of the rectangle."""
+        if not isinstance(x, int):
+            raise TypeError("x must be an integer")
+        if x < 0:
+            raise ValueError("x must be >= 0")
+
+    def validate_y(self, y):
+        """Validate the y-coordinate of the rectangle."""
+        if not isinstance(y, int):
+            raise TypeError("y must be an integer")
+        if y < 0:
+            raise ValueError("y must be >= 0")
