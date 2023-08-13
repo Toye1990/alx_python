@@ -84,7 +84,7 @@ class Rectangle(Base):
     
     def __str__(self):
         """Initialize string instance."""
-        return ("[rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.height, self.width))
+        return ("[rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a new rectangle."""
