@@ -1,7 +1,8 @@
 from models.base import Base
 """
- Module Base import for inheritance purpose
- """ 
+Module Base import for inheritance purpose, this will validate the instance in
+rectangle class
+""" 
 class Rectangle(Base):
  """
  class rectangle to used to manage id in this project and future project
