@@ -71,11 +71,11 @@ class Rectangle(Base):
         self.y = y
 
     def validate_width(self, width):
-     """Validate the width of the rectangle."""
-     if not isinstance(width, int):
-          raise TypeError("width must be an integer")
-     if width <= 0:
-          raise ValueError("width must be > 0")
+        """Validate the width of the rectangle."""
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
 
     def validate_height(self, height):
         """Validate the height of the rectangle."""
