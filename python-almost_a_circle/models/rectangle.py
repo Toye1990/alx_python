@@ -70,8 +70,10 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-        if not isinstance(id, int):
+        if not isinstance(width, int):
             raise TypeError("width must be an integer")
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
         if width < 0:
             raise ValueError("width must be > 0")
             
