@@ -78,6 +78,9 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = y
 
+    def area(self):
+      return self.__width * self.__height
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a new rectangle."""
         super().__init__(id)
