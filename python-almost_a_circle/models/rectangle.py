@@ -1,5 +1,7 @@
 from models.base import Base
-
+"""
+ Module Base import for inheritance purpose
+ """ 
 class Rectangle(Base):
  """
  class rectangle to used to manage id in this project and future project
