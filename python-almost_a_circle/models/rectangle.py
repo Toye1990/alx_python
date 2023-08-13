@@ -15,7 +15,11 @@ class Rectangle(Base):
  """
  class rectangle to used to manage id in this project and future project
  """ 
+ width = None
+ height = None
+
  def __init__(self, width, height, x=0, y=0, id=None):
+   
   """
  class constructor to initiate the rectangle
  """
