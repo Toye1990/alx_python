@@ -4,7 +4,7 @@ rectangle class. Lorem ipsum dolor sit amet consectetur adipiscing elit tempus n
 Pellentesque euismod proin himenaeos nullam felis eros maecenas egestas tristique, pretium imperdiet morbi habitasse ullamcorper cras ad accumsan turpis, quis congue phasellus ultricies potenti volutpat varius torquent. 
 Curae ante congue eu parturient imperdiet dui tempus penatibus, ultrices 
 """ 
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 """
 Module Base import for inheritance purpose, this will validate the instance in
 rectangle class. Lorem ipsum dolor sit amet consectetur adipiscing elit tempus natoque faucibus viverra, litora odio vitae cras blandit ut est integer nisl in accumsan himenaeos, facilisis eu maecenas lectus ante platea commodo curabitur fermentum et. 
