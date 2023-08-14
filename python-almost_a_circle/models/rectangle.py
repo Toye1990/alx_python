@@ -116,12 +116,20 @@ class Rectangle(Base):
        """using display function to print out #."""
        for i in range(self.height):
            for j in range(self.width):
-               for i in range(self.x):
-                      for j in range(self.y):
-                           print("#", end="")
-                      else:
-                           print
+               if j >= self.x and j < self.x + self.width:
+                   if i >= self.y and i < self.y + self.height:
+                      print("#", end="")
+                   else:
+                       print
 
+    def update(self, *args):
+        if len(args) != 5:
+            raise ValueError("update() takes 5 arguments")
+        self.id = args[0]
+        self.width = args[1]
+        self.height = args[2]
+        self.x = args
+        
   
         
   
