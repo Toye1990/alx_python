@@ -129,6 +129,21 @@ class Rectangle(Base):
         self.height = args[2]
         self.x = args[3]
         self.y = args[4]
+
+class Square(Rectangle):
+    """A square."""
+
+    def __init__(self, size, x=0, y=0, id=None):
+        """Initialize the square."""
+        super().__init__(size, size, x, y, id)
+
+        if self.width != self.height:
+            raise ValueError("width must be equal to height")
+
+    def __str__(self):
+        """Return the string representation of the square."""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+
         
   
         
