@@ -12,6 +12,7 @@ Pellentesque euismod proin himenaeos nullam felis eros maecenas egestas tristiqu
 Curae ante congue eu parturient imperdiet dui tempus penatibus, ultrices 
 """ 
 class Square(Rectangle):
+    """class square to used to manage id in this project and future"""
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, id, x, y)
         self.width = size
