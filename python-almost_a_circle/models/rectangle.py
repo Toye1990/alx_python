@@ -124,12 +124,11 @@ class Rectangle(Base):
 
     def update(self, *args):
         """Assign an argument to each attribute."""
-        if len(args) != 5:
-            raise ValueError("update() takes 5 arguments")
         self.id = args[0]
         self.width = args[1]
         self.height = args[2]
-        self.x = args
+        self.x = args[3]
+        self.y = args[4]
         
   
         
