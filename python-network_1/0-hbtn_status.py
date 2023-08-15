@@ -3,5 +3,6 @@ import requests
 """The request module imported to be used to fetch data"""
 
 response = requests.get('https://alu-intranet.hbtn.io/status')
+print(response.text)
 
  
