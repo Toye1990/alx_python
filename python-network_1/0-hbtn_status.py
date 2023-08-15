@@ -1,4 +1,6 @@
+"""The request module imported to be used to fetch data"""
 import requests
+"""The request module imported to be used to fetch data"""
 
 def main():
  response = requests.get('https://alu-intranet.hbtn.io/status')
