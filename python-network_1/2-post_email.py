@@ -7,6 +7,6 @@ import sys
 def request_email(url, email):
     """Sends a POST request to the given URL with the given email address as a parameter."""
     data = {'email': email}
-    response = response.POST(url, email)
+    response = response.POST(url, data=data)
     return response.text
 
