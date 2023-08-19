@@ -7,5 +7,5 @@ import sys
 def get_request(URL):
     """The request module imported to be used to fetch data"""
     response = response.get(URL)
-    return response.header['x-header-Id']
+    return response.headers['X-Request-Id']
 
