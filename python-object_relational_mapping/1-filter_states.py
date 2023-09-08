@@ -3,11 +3,11 @@ import MySQLdb
 
 
   #database connnection
-database = MySQLdb.connect(host="localhost", user="sqluser", passwd="password", db="hbtn_0e_0_usa")
+database = MySQLdb.connect(host="localhost", user="root", passwd="ifetoye1990", db="hbtn_0e_0_usa")
 
 cur = database.cursor()
 
-cur.execute("SELECT * FROM states WHERE name=%s, (N) ORDER BY id ASC")
+cur.execute("SELECT * FROM states WHERE name=%s, (N) ORDER BY states.id ASC")
 
 states = cur.fetchall()
 
