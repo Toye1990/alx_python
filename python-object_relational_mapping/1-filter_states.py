@@ -11,8 +11,8 @@ cur.execute("SELECT * FROM states WHERE name=%s, (N) ORDER BY states.id ASC")
 
 states = cur.fetchall()
 
-for state in states:
+"""for state in states:
     print(state)
 
 cur.close()
-database.close()
+database.close()"""
