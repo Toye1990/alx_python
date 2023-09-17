@@ -1,4 +1,4 @@
-"""flask is imported to use as a server run the database"""
+"""flask is imported to use as a server run to the database"""
 from flask import Flask
 
 #Create app variable intialize flask network#
