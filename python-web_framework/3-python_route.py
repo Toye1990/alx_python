@@ -1,12 +1,11 @@
 """flask is imported to use as a server run to the database"""
 from flask import Flask
 
-#Create app variable intialize flask network#
+"""Create app variable intialize flask network"""
 app=Flask(__name__)
 
 """Create app variable intialize flask network which will initiate the return of 
 HELLO HBNB"""
-# Define routes with the strict_slashes=False option
 @app.route("/", strict_slashes=False)
 def hello():
  return "Hello HBNB!"
@@ -29,5 +28,6 @@ of text"""
 def c(text="is cool"):
  return f"C{text.replace('_', '')}"
 
+"""using the if __name__ code to ensure code doesn't run when imported"""
 if __name__ == "__main__":
  app.run(host="0.0.0", port=5000, debug=True)
