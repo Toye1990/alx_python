@@ -1,6 +1,6 @@
-#flask is imported to use as a server run the database. Lorem ipsum dolor sit amet consectetur adipiscing elit tempus natoque faucibus viverra, litora
-#odio vitae cras blandit ut est integer nisl in accumsan himenaeos,
 from flask import Flask
+"""flask is imported to use as a server run the database. Lorem ipsum dolor sit amet consectetur adipiscing elit tempus natoque faucibus viverra, litora
+odio vitae cras blandit ut est integer nisl in accumsan himenaeos"""
 
 #Create app variable intialize flask network#
 app=Flask(__name__)
