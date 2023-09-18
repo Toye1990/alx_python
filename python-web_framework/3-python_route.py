@@ -1,11 +1,10 @@
-"""flask is imported to use as a server run to the database"""
+"""importing flask module"""
 from flask import Flask
 
-"""Create app variable intialize flask network"""
+"""Create an instance"""
 app=Flask(__name__)
 
-"""Create app variable intialize flask network which will initiate the return of 
-HELLO HBNB"""
+"""route definition"""
 @app.route("/", strict_slashes=False)
 def hello():
  return "Hello HBNB!"
@@ -16,14 +15,12 @@ HBNB"""
 def hbnb():
  return "HBNB"
 
-"""Create app variable intialize flask network which will initiate the return of 
-of an empty space"""
+"""c is fun"""
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
  return f"C{text.replace('_', '')}"
 
-"""Create app variable intialize flask network which will initiate the return of 
-of text"""
+"""python is cool"""
 @app.route("/c/<text>", strict_slashes=False)
 def c(text="is cool"):
  return f"C{text.replace('_', '')}"
