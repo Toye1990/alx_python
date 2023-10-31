@@ -1,8 +1,8 @@
 """import requests, sys and csv module"""
-
+import csv
 import requests
 import sys
-import csv
+
 
 def get_todo_progress(employee_id):
     #define url

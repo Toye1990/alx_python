@@ -1,7 +1,8 @@
 #import requests, sys and json
+import json
 import requests
 import sys
-import json
+
 
 def get_employee_todo_progress(employee_id):
     #define base url for API

@@ -1,6 +1,7 @@
+import json
 import requests
 import sys
-import json
+
 
 def export_todo_file():
 #define base url for API
