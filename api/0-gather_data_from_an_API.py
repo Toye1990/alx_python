@@ -1,5 +1,5 @@
 """import requests and json module"""
-import json, requests, sys
+import requests, sys
 
 def get_todo_list_progress(employee_id):
    '''
