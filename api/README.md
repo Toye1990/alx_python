@@ -1,0 +1,1 @@
+a project for an understanding how extracting data from api using requests module and converting data to json format
